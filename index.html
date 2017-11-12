@@ -39,9 +39,7 @@ ul {
     width: 100%;
 }
   
-  .active {
-    background-color: dark-grey;
-}
+
   
 li {
     float: left;
@@ -58,6 +56,16 @@ li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
     background-color: #555;
 }
+  
+ 
+  li a:hover:not(.active) {
+    background-color: #555;
+}
+
+.active {
+    background-color: #555;
+}
+  
 
 li.dropdown {
     display: inline-block;
